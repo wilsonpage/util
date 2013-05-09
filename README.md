@@ -1,4 +1,4 @@
-util
+utils
 ====
 
 Some common JS utilities

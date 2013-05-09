@@ -1,5 +1,5 @@
 {
-  "name": "util",
+  "name": "utils",
   "version": "0.1.0",
   "description": "Some common JS utilities",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/wilsonpage/util.git"
+    "url": "git://github.com/wilsonpage/utils.git"
   },
   "author": "Wilson Page",
   "license": "BSD",
