@@ -1,0 +1,17 @@
+{
+  "name": "util",
+  "version": "0.1.0",
+  "description": "Some common JS utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wilsonpage/util.git"
+  },
+  "author": "Wilson Page",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "d405ffbe3c0691238de99ba7c0bcf799d9f4e123"
+}
