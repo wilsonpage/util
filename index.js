@@ -11,19 +11,13 @@ exports.isArray = function(arg) {
   return arg instanceof Array;
 },
 
-exports.mixin = function(original) {
-  // Loop over every argument after the first.
-  [].slice.call(arguments, 1).forEach(function(source) {
-    for (var prop in source) {
-      original[prop] = source[prop];
-    }
-  });
+exports.mixin = function(original, source) {
+  for (var key in source) original[key] = source[key];
   return original;
 },
 
-exports.querySelectorId = function(id, el) {
-  if (!el) return;
-  return el.querySelector('#' + id);
+exports.byId = function(id, el) {
+  if (el) return el.querySelector('#' + id);
 },
 
 /**
@@ -52,7 +46,7 @@ exports.toNode = function(html) {
 // Determine if we have a DOM
 // in the current environment.
 exports.hasDom = function() {
-	return typeof document !== 'undefined';
+  return typeof document !== 'undefined';
 };
 
 var i = 0;
