@@ -50,10 +50,8 @@ exports.hasDom = function() {
 };
 
 var i = 0;
-exports.uniqueId = function(prefix, suffix) {
-  prefix = prefix || 'id';
-  suffix = suffix || 'a';
-  return [prefix, (++i) * Math.round(Math.random() * 100000), suffix].join('-');
+exports.uniqueId = function(prefix) {
+  return (prefix || 'id') + ((++i) * Math.round(Math.random() * 100000));
 };
 
 exports.keys = function(object) {
