@@ -1,0 +1,6 @@
+{
+  "name": "utils",
+  "description": "Some common JS utilities",
+  "main": "index.js",
+  "license": "MIT"
+}
