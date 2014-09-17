@@ -40,7 +40,7 @@ exports.insert = function(item, array, index) {
 exports.toNode = function(html) {
   var el = document.createElement('div');
   el.innerHTML = html;
-  return el.removeChild(el.firstElementChild);
+  return el.removeChild(el.firstElementChild || el.children[0]);
 },
 
 // Determine if we have a DOM
